@@ -24,7 +24,7 @@ public class PreviousOrders extends AppCompatActivity {
     }
 
     public void ordersToHome(View view) {
-        Intent intent = new Intent(this, Dashboard.class);
+        Intent intent = new Intent(this, DashboardNew.class);
         startActivity(intent);
     }
 

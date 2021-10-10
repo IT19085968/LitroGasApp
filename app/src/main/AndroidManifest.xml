@@ -10,21 +10,63 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".OrderSummary"></activity>
-        <activity android:name=".PreviousOrders" />
-        <activity android:name=".EditProfile" />
-        <activity android:name=".MyProfile" />
-        <activity android:name=".ResetPassword" />
-        <activity android:name=".Signup" />
+
         <activity
-            android:name=".Dashboard"
+            android:label="MY ORDER HISTORY"
+            android:name=".PreviousOrders"
+            android:parentActivityName=".Dashboard">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AddAddress" />
+        </activity>
+
+        <activity
+            android:label="EDIT PROFILE"
+            android:name=".EditProfile"
+            android:parentActivityName=".MyProfile">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AddAddress" />
+        </activity>
+
+        <activity
+            android:label="REGISTER"
+            android:name=".Signup"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AddAddress" />
+        </activity>
+
+        <activity
+            android:label="RESET PASSWORD"
+            android:name=".ResetPassword"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AddAddress" />
+        </activity>
+
+        <activity
+            android:label="MY PROFILE"
+            android:name=".MyProfile"
+            android:parentActivityName=".Dashboard">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AddAddress" />
+        </activity>
+
+        <activity
+            android:name=".DashboardNew"
             android:parentActivityName=".AddAddress">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".AddAddress" />
         </activity>
         <activity
+            android:label="ADD ADDRESS"
             android:name=".AddAddress"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".Signup">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />

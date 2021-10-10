@@ -15,9 +15,8 @@ public class AddAddress extends AppCompatActivity {
         Intent intent = getIntent();
     }
 
-    public void sendMessage(View view) {
+    public void sendMessageToDashboard(View view) {
         Intent intent = new Intent(this, DashboardNew.class);
         startActivity(intent);
-
     }
 }

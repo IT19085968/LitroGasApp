@@ -21,7 +21,7 @@ public class DashboardNew extends AppCompatActivity implements itemAdapter.itemC
     RecyclerView rvItems;
     itemAdapter itemAd;
     List<ItemModel> itemModelList = new ArrayList<>();
-
+    ImageView homeIcon, gasIcon, userIcon;
 
 
     @Override
@@ -31,6 +31,9 @@ public class DashboardNew extends AppCompatActivity implements itemAdapter.itemC
         Intent intent = getIntent();
 
 
+        homeIcon = findViewById(R.id.homeIcon);
+        gasIcon = findViewById(R.id.gasIcon);
+        userIcon = findViewById(R.id.profileIcon);
 
         rvItems = findViewById(R.id.rvItems);
         setData();
@@ -94,4 +97,13 @@ public class DashboardNew extends AppCompatActivity implements itemAdapter.itemC
     }
 
 
+    public void sendMessageToProfile(View view) {
+        Intent intent = new Intent(this, MyProfile.class);
+        startActivity(intent);
+    }
+
+    public void sendMessageToOrders(View view) {
+        Intent intent = new Intent(this, PreviousOrders.class);
+        startActivity(intent);
+    }
 }

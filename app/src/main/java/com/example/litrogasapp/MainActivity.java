@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     public void signIn(View view){
         DBHelper dbHelper = new DBHelper(this);
 
-        Intent intent = new Intent(this,Signup.class);
+        Intent intent = new Intent(this,Dashboard.class);
         Intent intent2 = new Intent(this,MainActivity.class);
 
         List emails = dbHelper.readAllInfo("email");
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void sendMessage(View view) {
+    public void sendMessageToSignup(View view) {
         Intent intent = new Intent(this, Signup.class);
         startActivity(intent);
     }

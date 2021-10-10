@@ -22,7 +22,7 @@ public class EditProfile extends AppCompatActivity {
     }
 
     public void editProfileToHome(View view) {
-        Intent intent = new Intent(this, Dashboard.class);
+        Intent intent = new Intent(this, DashboardNew.class);
         startActivity(intent);
     }
 

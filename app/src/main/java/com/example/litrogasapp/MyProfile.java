@@ -32,7 +32,7 @@ public class MyProfile extends AppCompatActivity {
     }
 
     public void profileToHome(View view){
-        Intent intent = new Intent(this, Dashboard.class);
+        Intent intent = new Intent(this, DashboardNew.class);
         startActivity(intent);
     }
 
