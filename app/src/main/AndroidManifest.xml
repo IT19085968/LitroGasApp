@@ -14,7 +14,7 @@
         <activity
             android:label="MY ORDER HISTORY"
             android:name=".PreviousOrders"
-            android:parentActivityName=".Dashboard">
+            android:parentActivityName=".DashboardNew">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".AddAddress" />
@@ -50,7 +50,7 @@
         <activity
             android:label="MY PROFILE"
             android:name=".MyProfile"
-            android:parentActivityName=".Dashboard">
+            android:parentActivityName=".DashboardNew">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".AddAddress" />
